@@ -96,7 +96,7 @@ const questions = [
       { text: '쓴 돈과 사진을 정리하고 다음엔 더 알차게', type: 'IJ' },
       { text: '이미 내년 축제 라인업 상상 중', type: 'EJ' },
       { text: '여운이 남아서 플레이리스트 반복 재생', type: 'IP' },
-      { text: 'SNS에 후기 올리고 친구들과 추억 공유', type: 'EP' },
+      { text: '친구들과 뒤풀이 가서 마지막까지 추억 쌓기', type: 'EP' },
     ],
   },
 ];
