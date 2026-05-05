@@ -1,102 +1,102 @@
 const questions = [
   {
     id: 1,
-    title: '영화제 티켓을 예매할 때 나는?',
+    title: '축제 라인업이 공개됐을 때 나는?',
     answers: [
-      { text: '오픈과 동시에 예매! 보고 싶은 작품은 무조건 선점', type: 'EJ' },
-      { text: '여유롭게 현장에서 사거나 취소표 노림', type: 'IP' },
-      { text: '지인과 함께 볼 작품 먼저 맞추고 예매', type: 'EP' },
-      { text: '평점·리뷰 꼼꼼히 보고 신중하게 결정', type: 'IJ' },
+      { text: '친구들 단톡방에 바로 공유하고 일정 잡기', type: 'EJ' },
+      { text: '좋아하는 아티스트만 체크하고 천천히 보기', type: 'IP' },
+      { text: '같이 갈 사람 반응부터 확인하기', type: 'EP' },
+      { text: '공연 시간표와 동선까지 캡처해두기', type: 'IJ' },
     ],
   },
   {
     id: 2,
-    title: '영화제 기간 하루 몇 편 볼 계획인가요?',
+    title: '축제 당일 몇 시쯤 도착할 건가요?',
     answers: [
-      { text: '1편! 여유롭게 제대로 즐기기', type: 'IJ' },
-      { text: '2~3편, 적당히 알차게', type: 'IP' },
-      { text: '4편 이상! 영화제는 몰아보는 맛', type: 'EJ' },
-      { text: '그날그날 기분에 따라 달라요', type: 'EP' },
+      { text: '일찍 가서 부스부터 공연까지 풀코스로', type: 'EJ' },
+      { text: '보고 싶은 공연 시간에 맞춰 여유롭게', type: 'IP' },
+      { text: '친구들이 모이는 시간에 맞춰서', type: 'EP' },
+      { text: '혼잡 시간 피해서 가장 효율적인 시간에', type: 'IJ' },
     ],
   },
   {
     id: 3,
-    title: '영화 관람 후 나의 행동은?',
+    title: '축제 중에 배가 고플 때 당신의 선택은?',
     answers: [
-      { text: '바로 SNS에 후기 올리기', type: 'EJ' },
-      { text: '혼자 여운 느끼며 조용히 있기', type: 'IP' },
-      { text: '친구들과 카페에서 영화 얘기 나누기', type: 'EP' },
-      { text: '감독·배우 정보 찾아보며 분석하기', type: 'IJ' },
+      { text: '인기 푸드트럭 줄이 길어도 바로 도전', type: 'EJ' },
+      { text: '조용한 곳에서 간단히 먹고 다시 즐기기', type: 'IP' },
+      { text: '친구들이 먹고 싶은 메뉴로 같이 고르기', type: 'EP' },
+      { text: '가격, 줄 길이, 메뉴를 비교해서 결정', type: 'IJ' },
     ],
   },
   {
     id: 4,
-    title: '영화제 굿즈숍 앞에 섰을 때 나는?',
+    title: '축제 부스가 쭉 늘어서 있다면?',
     answers: [
-      { text: '마음에 드는 거 다 담기! 나중에 후회하면 아쉽잖아', type: 'EJ' },
-      { text: '실용적인 것 위주로 딱 필요한 것만', type: 'IJ' },
-      { text: '예쁜 거 하나 골라 기념으로', type: 'EP' },
-      { text: '구경만 하고 그냥 나옴', type: 'IP' },
+      { text: '이벤트 부스부터 참여하고 경품까지 노리기', type: 'EJ' },
+      { text: '혜택 좋은 부스만 골라서 참여하기', type: 'IJ' },
+      { text: '사진 잘 나오는 부스에서 친구들과 인증샷', type: 'EP' },
+      { text: '사람 적은 부스 위주로 편하게 둘러보기', type: 'IP' },
     ],
   },
   {
     id: 5,
-    title: '영화제 식사 계획은?',
+    title: '축제 예산을 정할 때 나는?',
     answers: [
-      { text: '맛집 리스트 미리 뽑아두고 정해진 곳만', type: 'IJ' },
-      { text: '걷다가 땡기면 아무데나', type: 'EP' },
-      { text: '함께 온 사람들이 먹고 싶은 곳으로', type: 'EJ' },
-      { text: '편의점 or 간단히 해결, 영화가 우선!', type: 'IP' },
+      { text: '먹거리, 굿즈, 뒤풀이까지 항목별로 정리', type: 'IJ' },
+      { text: '현장 분위기 보고 그때그때 쓰기', type: 'EP' },
+      { text: '재밌는 경험에는 아끼지 않는 편', type: 'EJ' },
+      { text: '꼭 필요한 것만 쓰고 최대한 아끼기', type: 'IP' },
     ],
   },
   {
     id: 6,
-    title: '영화제에서 가장 중요한 것은?',
+    title: '축제에서 가장 기대되는 순간은?',
     answers: [
-      { text: '희귀한 작품, 특별 상영작을 보는 것', type: 'IJ' },
-      { text: '좋은 사람들과 함께하는 시간', type: 'EP' },
-      { text: '나만의 특별한 추억과 감동', type: 'IP' },
-      { text: '영화감독/배우 GV 참여 등 특별 이벤트', type: 'EJ' },
+      { text: '메인 공연 시작 전 딱 좋은 자리 잡는 순간', type: 'IJ' },
+      { text: '친구들과 웃고 떠드는 캠퍼스 분위기', type: 'EP' },
+      { text: '노을 지는 운동장에서 혼자 느끼는 설렘', type: 'IP' },
+      { text: '다 같이 떼창하고 분위기가 터지는 순간', type: 'EJ' },
     ],
   },
   {
     id: 7,
-    title: '영화제 예산을 짤 때 나는?',
+    title: '공연이 시작되기 전 기다리는 시간에는?',
     answers: [
-      { text: '티켓·굿즈·식비 항목별로 예산 설정', type: 'IJ' },
-      { text: '대략 이 정도 쓰면 되겠지~ 하고 감으로', type: 'EP' },
-      { text: '특별한 경험에는 아끼지 않는 편', type: 'EJ' },
-      { text: '가능하면 최대한 아끼는 편', type: 'IP' },
+      { text: '공연 순서와 화장실 위치까지 미리 확인', type: 'IJ' },
+      { text: '근처 부스 돌아다니며 즉흥적으로 즐기기', type: 'EP' },
+      { text: '응원봉, 슬로건, 영상 준비까지 완료', type: 'EJ' },
+      { text: '자리에서 쉬면서 체력 아껴두기', type: 'IP' },
     ],
   },
   {
     id: 8,
-    title: '영화제 동행은 어떻게 하나요?',
+    title: '축제 동행은 어떻게 하나요?',
     answers: [
-      { text: '혼자가 편해! 내 페이스대로', type: 'IP' },
-      { text: '친한 친구 1~2명과 함께', type: 'EP' },
-      { text: '영화 좋아하는 사람들 많이 모아서 단체로', type: 'EJ' },
-      { text: '그때그때 달라요, 혼자도 단체도 다 OK', type: 'EP' },
+      { text: '혼자도 좋아요, 내 페이스대로 즐기기', type: 'IP' },
+      { text: '친한 친구 1~2명과 편하게', type: 'EP' },
+      { text: '동기, 선배, 후배까지 다 같이 단체로', type: 'EJ' },
+      { text: '일정 맞는 사람과 필요한 순간만 합류', type: 'IJ' },
     ],
   },
   {
     id: 9,
-    title: '영화제 기간 숙소/이동 계획은?',
+    title: '축제 사진을 남길 때 나는?',
     answers: [
-      { text: '미리 숙소 예약하고 교통 루트도 다 짜둠', type: 'IJ' },
-      { text: '당일치기! 교통편만 체크', type: 'IP' },
-      { text: '즉흥적으로! 되면 되는 거지', type: 'EP' },
-      { text: '같이 가는 친구한테 다 맡김', type: 'EJ' },
+      { text: '포토존 위치와 사람이 적은 시간을 미리 체크', type: 'IJ' },
+      { text: '마음에 드는 장면만 조용히 몇 장', type: 'IP' },
+      { text: '친구들과 셀카, 단체샷, 릴스까지 다양하게', type: 'EP' },
+      { text: '실시간 스토리 업로드로 현장감 공유', type: 'EJ' },
     ],
   },
   {
     id: 10,
-    title: '영화제가 끝난 뒤 나는?',
+    title: '축제가 끝난 뒤 나는?',
     answers: [
-      { text: '관람 기록 정리하고 포스터·티켓 보관', type: 'IJ' },
-      { text: '이미 다음 영화제 기대 중', type: 'EJ' },
-      { text: '여운이 길게 남아서 한동안 그 생각만', type: 'IP' },
-      { text: 'SNS에 후기 올리고 친구들에게 추천', type: 'EP' },
+      { text: '쓴 돈과 사진을 정리하고 다음엔 더 알차게', type: 'IJ' },
+      { text: '이미 내년 축제 라인업 상상 중', type: 'EJ' },
+      { text: '여운이 남아서 플레이리스트 반복 재생', type: 'IP' },
+      { text: 'SNS에 후기 올리고 친구들과 추억 공유', type: 'EP' },
     ],
   },
 ];
@@ -113,11 +113,11 @@ const resultMap = {
     mbtiTag: 'EJ',
     mbtiDesc: '외향(E) + 계획(J)',
     description:
-      '영화제를 주도적으로 즐기는 실행형 타입!\n원하는 작품과 이벤트를 빠르게 선점하고\n현장의 열기를 끝까지 끌고 가는 편이에요.',
-    tipsTitle: '나에게 맞는 영화제 꿀팁',
+      '축제의 분위기를 직접 끌어올리는 실행형 타입!\n공연, 부스, 이벤트를 빠르게 선점하고\n현장의 열기를 끝까지 즐기는 편이에요.',
+    tipsTitle: '나에게 맞는 축제 꿀팁',
     tips: [
-      '오전/오후 2블록으로 스케줄을 나누면 체력 관리가 쉬워요.',
-      'GV/이벤트 우선순위를 3개만 먼저 정해두세요.',
+      '공연/부스/먹거리 우선순위를 3개만 먼저 정해두세요.',
+      '친구들과 만날 장소를 미리 정하면 단체 이동이 쉬워요.',
       '즉흥 소비 상한선을 미리 정하면 만족도가 더 올라가요.',
     ],
   },
@@ -129,12 +129,12 @@ const resultMap = {
     mbtiTag: 'EP',
     mbtiDesc: '외향(E) + 유연(P)',
     description:
-      '사람들과 함께할 때 영화제가 더 재밌어지는 타입!\n작품 감상부터 대화, 후기 공유까지\n순간의 분위기를 즐기며 경험치를 쌓아요.',
-    tipsTitle: '나에게 맞는 영화제 꿀팁',
+      '사람들과 함께할 때 축제가 더 재밌어지는 타입!\n먹거리, 공연, 사진까지 함께 나누며\n순간의 분위기를 즐기는 편이에요.',
+    tipsTitle: '나에게 맞는 축제 꿀팁',
     tips: [
-      '동행 그룹의 관람 기대작 1순위만 먼저 맞춰보세요.',
-      '감상 기록은 짧게라도 바로 남기면 공유가 쉬워져요.',
-      '식사/카페 시간을 상영 사이 고정 슬롯으로 두면 안정적이에요.',
+      '동행 그룹의 보고 싶은 공연 1순위만 먼저 맞춰보세요.',
+      '사진과 후기는 짧게라도 바로 남기면 공유가 쉬워져요.',
+      '먹거리 시간을 공연 전후 고정 슬롯으로 두면 안정적이에요.',
     ],
   },
   IJ: {
@@ -145,12 +145,12 @@ const resultMap = {
     mbtiTag: 'IJ',
     mbtiDesc: '내향(I) + 계획(J)',
     description:
-      '분석과 계획으로 만족도를 높이는 정밀 설계형!\n작품 선택, 동선, 예산까지 균형 있게 준비해\n후회 없는 영화제 경험을 만드는 타입입니다.',
-    tipsTitle: '나에게 맞는 영화제 꿀팁',
+      '분석과 계획으로 만족도를 높이는 정밀 설계형!\n공연 시간, 부스 동선, 예산까지 균형 있게 준비해\n후회 없는 축제 경험을 만드는 타입입니다.',
+    tipsTitle: '나에게 맞는 축제 꿀팁',
     tips: [
-      '플랜 A/B를 동시에 짜두면 매진 상황에 강해집니다.',
-      '하루 총 이동시간을 90분 이내로 제한해보세요.',
-      '예산표는 티켓/굿즈/식비/교통 4항목으로 나누면 정확해요.',
+      '플랜 A/B를 동시에 짜두면 우천이나 혼잡 상황에 강해집니다.',
+      '공연장, 푸드존, 화장실 위치를 먼저 체크해보세요.',
+      '예산표는 먹거리/굿즈/뒤풀이/교통 4항목으로 나누면 정확해요.',
     ],
   },
   IP: {
@@ -161,12 +161,12 @@ const resultMap = {
     mbtiTag: 'IP',
     mbtiDesc: '내향(I) + 유연(P)',
     description:
-      '영화의 여운을 깊게 즐기는 몰입형 타입!\n혼자만의 페이스를 지키면서도 필요한 순간엔 유연하게 움직여\n내 취향에 맞는 영화제를 완성합니다.',
-    tipsTitle: '나에게 맞는 영화제 꿀팁',
+      '축제의 여운을 깊게 즐기는 몰입형 타입!\n혼자만의 페이스를 지키면서도 필요한 순간엔 유연하게 움직여\n내 취향에 맞는 축제를 완성합니다.',
+    tipsTitle: '나에게 맞는 축제 꿀팁',
     tips: [
-      '하루 2~3편 중심으로 여유 슬롯을 꼭 남겨두세요.',
-      '인상 깊은 장면 한 줄 기록만 해도 기억이 오래 갑니다.',
-      '혼영 루트와 동행 루트를 각각 1개씩 준비해두면 편해요.',
+      '공연 사이에 쉴 수 있는 여유 시간을 꼭 남겨두세요.',
+      '인상 깊은 순간을 한 줄로 남기면 기억이 오래 갑니다.',
+      '혼자 즐길 루트와 친구와 합류할 루트를 각각 준비해두면 편해요.',
     ],
   },
 };
@@ -219,7 +219,7 @@ const sokBankBenefitMap = {
       desc: 'IP에게 추천하는 혜택은 날씨와 행운의 룰렛이에요. 오늘의 기분과 컨디션을 확인하고 부담 없이 가볍게 혜택을 즐길 수 있어요.',
     },
     guideDesc: '쏙뱅크에서 오늘의 날씨를 확인하고, 행운의 룰렛으로 가볍게 캐시 혜택에 참여해보세요.',
-    tip: 'Tip: 영화제 일정 전후로 날씨를 확인하고 룰렛을 돌리면 작은 혜택도 즐거운 루틴이 돼요.',
+    tip: 'Tip: 축제 일정 전후로 날씨를 확인하고 룰렛을 돌리면 작은 혜택도 즐거운 루틴이 돼요.',
   },
 };
 
@@ -359,7 +359,7 @@ function renderResult() {
   ui.resultDesc.textContent = data.description;
   const tipIcons = ['▹', '♡', '▣'];
   ui.resultTips.innerHTML = `
-    <h3>${data.tipsTitle || '나에게 맞는 영화제 꿀팁'}</h3>
+    <h3>${data.tipsTitle || '나에게 맞는 축제 꿀팁'}</h3>
     <ul>
       ${data.tips
         .map(
@@ -542,7 +542,7 @@ async function createFallbackCardBlob() {
   ctx.fillStyle = '#F4F6FB';
   ctx.fillRect(0, 0, 1080, 1920);
   drawRoundedRect(ctx, 80, 260, 920, 1400, 32, '#FFFFFF');
-  drawCenteredFittedText(ctx, '전주국제영화제 MoneyBTI 결과', 180, 900, '700', 62, 44, '#4B5670');
+  drawCenteredFittedText(ctx, '대학교 축제 MoneyBTI 결과', 180, 900, '700', 62, 44, '#4B5670');
   drawCenteredFittedText(ctx, data.mbtiTag, 520, 800, '800', 250, 170, '#3459D6');
   drawCenteredFittedText(ctx, data.title, 700, 860, '800', 86, 52, '#3459D6');
   drawCenteredFittedText(ctx, data.mbtiDesc, 810, 860, '700', 64, 42, '#5A6172');
@@ -572,14 +572,14 @@ async function shareToInstagramStory() {
   try {
     const blob = await createResultCardBlob();
     const resultType = state.resultType || getTopResultType(state.score);
-    const filename = `jiff-moneybti-${resultType}-${Date.now()}.png`;
+    const filename = `university-festival-moneybti-${resultType}-${Date.now()}.png`;
     let shared = false;
 
     if (typeof File !== 'undefined') {
       const file = new File([blob], filename, { type: 'image/png' });
       const shareData = {
-        title: 'JIFF MoneyBTI 결과',
-        text: '전주국제영화제 X 전북은행 대학생 서포터즈 MoneyBTI 결과입니다. @jbsupporters_official @jbs_jeonjin.zip',
+        title: '대학교 축제 MoneyBTI 결과',
+        text: '대학교 축제 X 전북은행 대학생 서포터즈 MoneyBTI 결과입니다. @jbsupporters_official @jbs_jeonjin.zip',
         files: [file],
       };
 
@@ -616,7 +616,7 @@ async function shareToInstagramStory() {
     if (!isAbort) {
       try {
         const fallbackBlob = await createFallbackCardBlob();
-        const fallbackFilename = `jiff-moneybti-${Date.now()}-fallback.png`;
+        const fallbackFilename = `university-festival-moneybti-${Date.now()}-fallback.png`;
         downloadBlob(fallbackBlob, fallbackFilename);
         window.open(TEAM_INSTAGRAM_URL, '_blank', 'noopener,noreferrer');
         window.alert('공유 기능 대신 결과 이미지를 저장했습니다. 인스타 스토리에서 업로드해 주세요.');

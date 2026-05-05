@@ -1,13 +1,13 @@
-# JIFF MoneyBTI (전주국제영화제 X 전북은행 대학생 서포터즈)
+# 대학교 축제 MoneyBTI (전북은행 대학생 서포터즈)
 
-전주국제영화제 현장 참여형 `MoneyBTI` 웹페이지입니다.  
+대학교 축제 현장 참여형 `MoneyBTI` 웹페이지입니다.  
 모바일 퍼스트 UI로 구성되어 있으며, 질문 응답 기반 성향 결과와 유형별 혜택 안내, 인스타 공유 기능을 포함합니다.
 
-- 배포 URL: <https://gusle01.github.io/jeonjumovie_quiz/>
+- 배포 URL: <https://gusle01.github.io/university_festival/>
 
 ## 주요 목적
 
-- 영화제 관람/소비 성향 테스트 제공
+- 대학교 축제 참여/소비 성향 테스트 제공
 - 결과 기반 참여 유도(공유/재참여/혜택 탐색)
 - 전북은행 대학생 서포터즈 및 팀 브랜딩 노출
 
@@ -75,7 +75,7 @@
 ## 로컬 실행
 
 ```bash
-cd "/Users/parkyoung-ju/visual studio/JB_supporters/jeonjumovie_quiz_repo"
+cd "/Users/parkyoung-ju/visual studio/JB_supporters/university_festival"
 python3 -m http.server 4173
 ```
 
