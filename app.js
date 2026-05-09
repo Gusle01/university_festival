@@ -101,6 +101,109 @@ const questions = [
   },
 ];
 
+const englishQuestions = [
+  {
+    id: 1,
+    title: 'When the festival lineup is announced, I...',
+    answers: [
+      { text: 'Share it in the group chat and start planning right away', type: 'EJ' },
+      { text: 'Only check my favorite artists and take my time', type: 'IP' },
+      { text: 'First see who wants to go with me', type: 'EP' },
+      { text: 'Save the schedule and map out the best route', type: 'IJ' },
+    ],
+  },
+  {
+    id: 2,
+    title: 'What time would you arrive on festival day?',
+    answers: [
+      { text: 'Early, so I can enjoy booths, food, and performances', type: 'EJ' },
+      { text: 'Around the performance I really want to see', type: 'IP' },
+      { text: 'Whenever my friends are meeting up', type: 'EP' },
+      { text: 'At the most efficient time to avoid crowds', type: 'IJ' },
+    ],
+  },
+  {
+    id: 3,
+    title: 'When you get hungry during the festival, you...',
+    answers: [
+      { text: 'Jump into the popular food truck line', type: 'EJ' },
+      { text: 'Eat something simple in a quieter spot', type: 'IP' },
+      { text: 'Choose whatever my friends want to eat together', type: 'EP' },
+      { text: 'Compare price, wait time, and menu before deciding', type: 'IJ' },
+    ],
+  },
+  {
+    id: 4,
+    title: 'When you see a whole row of festival booths, you...',
+    answers: [
+      { text: 'Start with event booths and go for the prizes', type: 'EJ' },
+      { text: 'Pick only the booths with the best benefits', type: 'IJ' },
+      { text: 'Take photos with friends at the prettiest booths', type: 'EP' },
+      { text: 'Browse the less crowded booths at my own pace', type: 'IP' },
+    ],
+  },
+  {
+    id: 5,
+    title: 'How do you set your festival budget?',
+    answers: [
+      { text: 'Break it down by food, merch, after-party, and more', type: 'IJ' },
+      { text: 'Spend as I go based on the vibe', type: 'EP' },
+      { text: 'I do not hold back on fun experiences', type: 'EJ' },
+      { text: 'Spend only on what I really need', type: 'IP' },
+    ],
+  },
+  {
+    id: 6,
+    title: 'What moment are you most excited for?',
+    answers: [
+      { text: 'Getting a great spot before the main performance', type: 'IJ' },
+      { text: 'Laughing and hanging out with friends on campus', type: 'EP' },
+      { text: 'Feeling the festival mood alone under the evening sky', type: 'IP' },
+      { text: 'Singing along when the crowd energy explodes', type: 'EJ' },
+    ],
+  },
+  {
+    id: 7,
+    title: 'Before the performance starts, you...',
+    answers: [
+      { text: 'Check the order, restroom location, and timing', type: 'IJ' },
+      { text: 'Roam nearby booths and enjoy things spontaneously', type: 'EP' },
+      { text: 'Get cheering items, slogans, and videos ready', type: 'EJ' },
+      { text: 'Rest in my spot and save my energy', type: 'IP' },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Who do you go to the festival with?',
+    answers: [
+      { text: 'Going alone is fine. I like my own pace', type: 'IP' },
+      { text: 'One or two close friends', type: 'EP' },
+      { text: 'A big group with classmates, seniors, and juniors', type: 'EJ' },
+      { text: 'I join others only when schedules line up', type: 'IJ' },
+    ],
+  },
+  {
+    id: 9,
+    title: 'When taking festival photos, you...',
+    answers: [
+      { text: 'Check photo zones and less crowded times in advance', type: 'IJ' },
+      { text: 'Quietly take a few photos of moments I like', type: 'IP' },
+      { text: 'Take selfies, group shots, and reels with friends', type: 'EP' },
+      { text: 'Upload stories live to share the festival energy', type: 'EJ' },
+    ],
+  },
+  {
+    id: 10,
+    title: 'After the festival ends, I...',
+    answers: [
+      { text: 'Review my spending and photos to plan better next time', type: 'IJ' },
+      { text: 'Already imagine next year’s festival lineup', type: 'EJ' },
+      { text: 'Replay the playlist and enjoy the afterglow', type: 'IP' },
+      { text: 'Go to an after-party with friends and keep the memories going', type: 'EP' },
+    ],
+  },
+];
+
 const OFFICIAL_INSTAGRAM_URL = 'https://www.instagram.com/jbsupporters_official/';
 const TEAM_INSTAGRAM_URL = 'https://www.instagram.com/jbs_jeonjin.zip/';
 
@@ -171,6 +274,65 @@ const resultMap = {
   },
 };
 
+const englishResultMap = {
+  EJ: {
+    ...resultMap.EJ,
+    title: '🎉 EJ Type: Energy Driver',
+    imageAlt: 'EJ type result image',
+    mbtiDesc: 'Extroverted (E) + Planned (J)',
+    description:
+      'You are the type who brings the festival energy up.\nYou move fast, claim the best moments early,\nand enjoy the crowd until the very end.',
+    tipsTitle: 'Festival tips for you',
+    tips: [
+      'Choose your top 3 priorities across performances, booths, and food.',
+      'Set a meeting spot with friends before the crowd gets busy.',
+      'Give yourself a spending limit for spontaneous purchases.',
+    ],
+  },
+  EP: {
+    ...resultMap.EP,
+    title: '🤝 EP Type: Social Mover',
+    imageAlt: 'EP type result image',
+    mbtiDesc: 'Extroverted (E) + Flexible (P)',
+    description:
+      'Festivals are more fun when you share them with people.\nFood, performances, photos, and conversations\nall become part of the memory for you.',
+    tipsTitle: 'Festival tips for you',
+    tips: [
+      'Align with your group on the one performance everyone wants to see.',
+      'Leave quick photo notes or captions right away for easy sharing.',
+      'Keep a loose food break before or after the main performance.',
+    ],
+  },
+  IJ: {
+    ...resultMap.IJ,
+    title: '🧭 IJ Type: Strategy Curator',
+    imageAlt: 'IJ type result image',
+    mbtiDesc: 'Introverted (I) + Planned (J)',
+    description:
+      'You raise satisfaction through careful planning.\nPerformance times, booth routes, and budget details\nhelp you build a festival day with fewer regrets.',
+    tipsTitle: 'Festival tips for you',
+    tips: [
+      'Prepare a plan B for rain, crowds, or sudden schedule changes.',
+      'Check the stage, food zone, and restroom locations first.',
+      'Split your budget into food, merch, after-party, and transport.',
+    ],
+  },
+  IP: {
+    ...resultMap.IP,
+    title: '🌙 IP Type: Mood Archivist',
+    imageAlt: 'IP type result image',
+    mbtiDesc: 'Introverted (I) + Flexible (P)',
+    description:
+      'You enjoy the mood and afterglow of the festival deeply.\nYou keep your own pace and move flexibly\nso the festival fits your taste.',
+    tipsTitle: 'Festival tips for you',
+    tips: [
+      'Keep open breaks between performances so you can rest.',
+      'Write one line about the best moment so the memory lasts longer.',
+      'Prepare one solo route and one route for meeting friends.',
+    ],
+  },
+};
+
 const sokBankBenefitMap = {
   EJ: {
     typeLabel: 'EJ 유형',
@@ -223,6 +385,73 @@ const sokBankBenefitMap = {
   },
 };
 
+const englishSokBankBenefitMap = {
+  EJ: {
+    typeLabel: 'EJ Type',
+    typeName: '⚡ Energy Driver',
+    reason:
+      'You prefer benefits that are quick to join and easy to check right away, so instant-participation rewards fit you well.',
+    feature: {
+      benefits: [
+        { label: 'JB App Tech', key: 'JB앱테크' },
+        { label: 'Attendance Cash Rewards', key: '출석하고 현금받기' },
+      ],
+      badge: 'Action Pick',
+      desc: 'JB App Tech and attendance cash rewards are a good fit for EJ. You can join short missions, keep a simple routine, and check rewards quickly.',
+    },
+    guideDesc: 'Open the Benefits menu in Sok Bank to find JB App Tech and attendance rewards.',
+    tip: 'Tip: Turn on app notifications so you do not miss first-come, first-served events.',
+  },
+  EP: {
+    typeLabel: 'EP Type',
+    typeName: '🤝 Social Mover',
+    reason:
+      'You respond well to benefits that are fun, easy to share, and good conversation starters.',
+    feature: {
+      benefits: [
+        { label: 'Lucky Roulette and Ladder Game', key: '행운의 룰렛과 사다리타기' },
+        { label: 'AI Easy Investment', key: 'AI 간편투자' },
+      ],
+      badge: 'Trend Pick',
+      desc: 'Lucky Roulette, Ladder Game, and AI Easy Investment fit EP well. They combine fun participation with a light new financial experience.',
+    },
+    guideDesc: 'Check roulette and ladder events in Sok Bank, then try AI Easy Investment casually.',
+    tip: 'Tip: Sharing today’s roulette result with friends makes the benefit more fun.',
+  },
+  IJ: {
+    typeLabel: 'IJ Type',
+    typeName: '🧭 Strategy Curator',
+    reason:
+      'You are good at routines, informed choices, and optimizing rewards that build over time.',
+    feature: {
+      benefits: [
+        { label: 'Weather', key: '날씨' },
+        { label: 'Health Walk', key: '건강걸음' },
+      ],
+      badge: 'Routine Pick',
+      desc: 'Weather and Health Walk fit IJ well. They connect daily information and walking routines to benefits you can build consistently.',
+    },
+    guideDesc: 'Use Sok Bank to check weather and Health Walk benefits, then build a daily reward routine.',
+    tip: 'Tip: Check the weather and your walking plan at the start of the day to keep the routine going.',
+  },
+  IP: {
+    typeLabel: 'IP Type',
+    typeName: '🌿 Mood Archivist',
+    reason:
+      'You prefer light, low-pressure benefits connected to your daily mood and condition.',
+    feature: {
+      benefits: [
+        { label: 'Weather', key: '날씨' },
+        { label: 'Lucky Roulette', key: '행운의 룰렛' },
+      ],
+      badge: 'Mood Pick',
+      desc: 'Weather and Lucky Roulette fit IP well. You can check the day’s mood and condition, then enjoy a small benefit without pressure.',
+    },
+    guideDesc: 'Check today’s weather in Sok Bank and try Lucky Roulette for a light cash benefit.',
+    tip: 'Tip: Before and after festival plans, weather checks and roulette can become a small fun routine.',
+  },
+};
+
 const benefitImageMap = {
   날씨: './assets/benefit-weather.jpeg',
   건강걸음: './assets/benefit-health-walk.jpeg',
@@ -242,6 +471,14 @@ const ui = {
   question: document.getElementById('question-screen'),
   result: document.getElementById('result-screen'),
   benefit: document.getElementById('benefit-screen'),
+  languageToggle: document.getElementById('language-toggle'),
+  startBadge: document.getElementById('start-badge'),
+  startTitle: document.getElementById('start-title'),
+  startSubtitle: document.getElementById('start-subtitle'),
+  infoTitle: document.getElementById('info-title'),
+  infoItemTime: document.getElementById('info-item-time'),
+  infoItemAnonymous: document.getElementById('info-item-anonymous'),
+  infoItemShare: document.getElementById('info-item-share'),
   startBtn: document.getElementById('start-btn'),
   backBtn: document.getElementById('back-btn'),
   progressText: document.getElementById('progress-text'),
@@ -253,29 +490,136 @@ const ui = {
   resultTitle: document.getElementById('result-title'),
   resultDesc: document.getElementById('result-desc'),
   resultTips: document.getElementById('result-tips'),
+  resultBadge: document.getElementById('result-badge'),
   benefitBtn: document.getElementById('benefit-btn'),
+  benefitBtnText: document.getElementById('benefit-btn-text'),
   benefitBackBtn: document.getElementById('benefit-back-btn'),
+  benefitBadge: document.getElementById('benefit-badge'),
+  benefitHeroCaption: document.getElementById('benefit-hero-caption'),
   benefitTypeThumb: document.getElementById('benefit-type-thumb'),
   benefitTypeLabel: document.getElementById('benefit-type-label'),
   benefitTypeName: document.getElementById('benefit-type-name'),
+  benefitReasonTitle: document.getElementById('benefit-reason-title'),
   benefitReasonText: document.getElementById('benefit-reason-text'),
+  benefitFeatureTitle: document.getElementById('benefit-feature-title'),
   benefitFeatureList: document.getElementById('benefit-feature-list'),
   benefitFeatureBadge: document.getElementById('benefit-feature-badge'),
   benefitFeatureDesc: document.getElementById('benefit-feature-desc'),
+  benefitGuideTitle: document.getElementById('benefit-guide-title'),
   benefitGuideDesc: document.getElementById('benefit-guide-desc'),
   benefitTipText: document.getElementById('benefit-tip-text'),
+  benefitCtaTitle: document.getElementById('benefit-cta-title'),
+  benefitCtaDesc: document.getElementById('benefit-cta-desc'),
+  storeBtnLabels: document.querySelectorAll('.store-btn-label'),
   officialInstagramBtn: document.getElementById('official-instagram-btn'),
+  officialInstagramLabel: document.getElementById('official-instagram-label'),
   teamInstagramBtn: document.getElementById('team-instagram-btn'),
+  teamInstagramLabel: document.getElementById('team-instagram-label'),
   storyShareBtn: document.getElementById('story-share-btn'),
+  storyShareLabel: document.getElementById('story-share-label'),
   retryBtn: document.getElementById('retry-btn'),
 };
 
 const state = {
+  language: 'ko',
   step: 0,
   score: { EJ: 0, EP: 0, IJ: 0, IP: 0 },
   history: [],
   resultType: null,
 };
+
+const languageText = {
+  ko: {
+    documentTitle: '대학교 축제 MoneyBTI',
+    htmlLang: 'ko',
+    toggleLabel: 'English',
+    startBadge: '대동제',
+    startTitle: '나의 축제 소비 성향,<br /><span class="title-accent">MoneyBTI</span>로 확인하기',
+    startSubtitle: '10개 질문으로 알아보는 나의 축제 참여/소비 스타일',
+    infoTitle: '테스트 안내',
+    infoItems: ['약 1분 소요', '익명으로 바로 진행', '결과 화면 저장/공유 가능'],
+    startButton: '테스트 시작하기',
+    backButton: '‹ 이전',
+    resultBadge: '결과',
+    tipsFallback: '나에게 맞는 축제 꿀팁',
+    benefitButton: '나의 성향과 "<span class="sok-emphasis">쏙</span>"맞는 혜택 찾기',
+    officialInstagram: '서포터즈 공식 인스타',
+    teamInstagram: '전진난만 팀 인스타',
+    shareButton: '결과 이미지 공유',
+    shareLoading: '이미지 준비 중...',
+    retryButton: '다시 테스트하기',
+    benefitBadge: '은행 혜택 추천',
+    benefitHeroCaption:
+      '<span class="benefit-caption-accent">쏙뱅크</span>의 혜택에 <span class="benefit-caption-accent">"쏙"</span>빠져!',
+    benefitReasonTitle: '💡 왜 이 혜택이 맞을까?',
+    benefitFeatureTitle: '추천 혜택',
+    benefitGuideTitle: '📱 <span class="benefit-guide-accent">쏙뱅크</span>에서 이렇게 확인할 수 있어요!',
+    benefitCtaTitle: '전북은행 앱에서 확인해보세요',
+    benefitCtaDesc: '전북은행 모바일뱅킹 앱에서 더 많은 혜택과 이벤트를 확인할 수 있어요. 지금 바로 확인해보세요.',
+    storeButton: '쏙뱅크 속으로 "쏙!"',
+    benefitBackButton: '결과 화면으로 돌아가기',
+    shareTitle: '대학교 축제 MoneyBTI 결과',
+    shareText: '대학교 축제 X 전북은행 대학생 서포터즈 MoneyBTI 결과입니다. @jbsupporters_official @jbs_jeonjin.zip',
+    fallbackCardTitle: '대학교 축제 MoneyBTI 결과',
+    savedAlert: '결과 이미지를 저장했습니다. 인스타 스토리에서 업로드해 주세요.',
+    fallbackSavedAlert: '공유 기능 대신 결과 이미지를 저장했습니다. 인스타 스토리에서 업로드해 주세요.',
+    imageErrorAlert: '이미지 생성 중 문제가 발생했습니다. 브라우저를 새로고침한 뒤 다시 시도해 주세요.',
+    filenamePrefix: 'university-festival-moneybti',
+  },
+  en: {
+    documentTitle: 'University Festival MoneyBTI',
+    htmlLang: 'en',
+    toggleLabel: '한국어',
+    startBadge: 'Daedongje',
+    startTitle: 'Find Your Festival Spending Style<br />with <span class="title-accent">MoneyBTI</span>',
+    startSubtitle: 'A 10-question survey about your university festival style',
+    infoTitle: 'Test Guide',
+    infoItems: ['Takes about 1 minute', 'Anonymous and instant', 'Save or share your result'],
+    startButton: 'Start Test',
+    backButton: '‹ Back',
+    resultBadge: 'Result',
+    tipsFallback: 'Festival tips for you',
+    benefitButton: 'Find Benefits That Fit My Type',
+    officialInstagram: 'Supporters Official Instagram',
+    teamInstagram: 'Jeonjin Team Instagram',
+    shareButton: 'Share Result Image',
+    shareLoading: 'Preparing image...',
+    retryButton: 'Retake Test',
+    benefitBadge: 'Bank Benefit Pick',
+    benefitHeroCaption:
+      'Dive into <span class="benefit-caption-accent">Sok Bank</span> benefits that fit you!',
+    benefitReasonTitle: '💡 Why does this benefit fit?',
+    benefitFeatureTitle: 'Recommended Benefits',
+    benefitGuideTitle: '📱 How to check it in <span class="benefit-guide-accent">Sok Bank</span>',
+    benefitCtaTitle: 'Check it in the Jeonbuk Bank app',
+    benefitCtaDesc: 'Find more benefits and events in the Jeonbuk Bank mobile banking app.',
+    storeButton: 'Go to Sok Bank',
+    benefitBackButton: 'Back to Result',
+    shareTitle: 'University Festival MoneyBTI Result',
+    shareText: 'University Festival X Jeonbuk Bank Supporters MoneyBTI result. @jbsupporters_official @jbs_jeonjin.zip',
+    fallbackCardTitle: 'University Festival MoneyBTI Result',
+    savedAlert: 'Your result image has been saved. Upload it to your Instagram story.',
+    fallbackSavedAlert: 'Sharing is unavailable, so your result image has been saved. Upload it to your Instagram story.',
+    imageErrorAlert: 'There was a problem creating the image. Please refresh your browser and try again.',
+    filenamePrefix: 'university-festival-moneybti-en',
+  },
+};
+
+function getQuestions() {
+  return state.language === 'en' ? englishQuestions : questions;
+}
+
+function getResultMap() {
+  return state.language === 'en' ? englishResultMap : resultMap;
+}
+
+function getBenefitMap() {
+  return state.language === 'en' ? englishSokBankBenefitMap : sokBankBenefitMap;
+}
+
+function getText() {
+  return languageText[state.language];
+}
 
 function getTopResultType(score) {
   const tiePriority = ['EJ', 'EP', 'IJ', 'IP'];
@@ -301,9 +645,10 @@ function setScreen(target) {
 }
 
 function renderQuestion() {
-  const q = questions[state.step];
-  ui.progressText.textContent = `${state.step + 1} / ${questions.length}`;
-  ui.progressBar.style.width = `${((state.step + 1) / questions.length) * 100}%`;
+  const currentQuestions = getQuestions();
+  const q = currentQuestions[state.step];
+  ui.progressText.textContent = `${state.step + 1} / ${currentQuestions.length}`;
+  ui.progressBar.style.width = `${((state.step + 1) / currentQuestions.length) * 100}%`;
   ui.questionLabel.textContent = `Q${state.step + 1}`;
   ui.questionTitle.textContent = q.title;
   ui.answers.innerHTML = '';
@@ -322,7 +667,7 @@ function selectAnswer(type) {
   state.history.push(type);
   state.score[type] += 1;
 
-  if (state.step === questions.length - 1) {
+  if (state.step === getQuestions().length - 1) {
     renderResult();
     setScreen('result');
     return;
@@ -349,7 +694,8 @@ function goBack() {
 
 function renderResult() {
   const type = getTopResultType(state.score);
-  const data = resultMap[type];
+  const data = getResultMap()[type];
+  const text = getText();
   state.resultType = type;
   ui.result.dataset.type = type;
 
@@ -359,7 +705,7 @@ function renderResult() {
   ui.resultDesc.textContent = data.description;
   const tipIcons = ['▹', '♡', '▣'];
   ui.resultTips.innerHTML = `
-    <h3>${data.tipsTitle || '나에게 맞는 축제 꿀팁'}</h3>
+    <h3>${data.tipsTitle || text.tipsFallback}</h3>
     <ul>
       ${data.tips
         .map(
@@ -376,9 +722,11 @@ function renderResult() {
 }
 
 function renderBenefit(type) {
-  const fallback = sokBankBenefitMap.EP;
-  const data = sokBankBenefitMap[type] || fallback;
-  const resultData = resultMap[type] || resultMap.EP;
+  const benefitMap = getBenefitMap();
+  const currentResultMap = getResultMap();
+  const fallback = benefitMap.EP;
+  const data = benefitMap[type] || fallback;
+  const resultData = currentResultMap[type] || currentResultMap.EP;
 
   ui.benefit.dataset.type = type;
   ui.benefitTypeThumb.src = resultData.image;
@@ -388,11 +736,13 @@ function renderBenefit(type) {
   ui.benefitReasonText.textContent = data.reason;
   ui.benefitFeatureList.innerHTML = data.feature.benefits
     .map((benefit) => {
-      const image = benefitImageMap[benefit];
+      const benefitLabel = typeof benefit === 'string' ? benefit : benefit.label;
+      const benefitKey = typeof benefit === 'string' ? benefit : benefit.key;
+      const image = benefitImageMap[benefitKey];
       return `
         <article class="benefit-chip">
-          ${image ? `<img src="${image}" alt="${benefit} 혜택 이미지" />` : ''}
-          <span>${benefit}</span>
+          ${image ? `<img src="${image}" alt="${benefitLabel}" />` : ''}
+          <span>${benefitLabel}</span>
         </article>
       `;
     })
@@ -503,7 +853,7 @@ function canvasToPngBlob(canvas) {
 
 async function createResultCardBlob() {
   const resultType = state.resultType || getTopResultType(state.score);
-  const data = resultMap[resultType];
+  const data = getResultMap()[resultType];
   const shareImagePath = data.shareImage || data.image;
   try {
     const response = await fetch(shareImagePath, { cache: 'no-store' });
@@ -529,7 +879,8 @@ async function createResultCardBlob() {
 
 async function createFallbackCardBlob() {
   const resultType = state.resultType || getTopResultType(state.score);
-  const data = resultMap[resultType];
+  const data = getResultMap()[resultType];
+  const text = getText();
   const canvas = document.createElement('canvas');
   canvas.width = 1080;
   canvas.height = 1920;
@@ -542,7 +893,7 @@ async function createFallbackCardBlob() {
   ctx.fillStyle = '#F4F6FB';
   ctx.fillRect(0, 0, 1080, 1920);
   drawRoundedRect(ctx, 80, 260, 920, 1400, 32, '#FFFFFF');
-  drawCenteredFittedText(ctx, '대학교 축제 MoneyBTI 결과', 180, 900, '700', 62, 44, '#4B5670');
+  drawCenteredFittedText(ctx, text.fallbackCardTitle, 180, 900, '700', 62, 44, '#4B5670');
   drawCenteredFittedText(ctx, data.mbtiTag, 520, 800, '800', 250, 170, '#3459D6');
   drawCenteredFittedText(ctx, data.title, 700, 860, '800', 86, 52, '#3459D6');
   drawCenteredFittedText(ctx, data.mbtiDesc, 810, 860, '700', 64, 42, '#5A6172');
@@ -564,22 +915,23 @@ function downloadBlob(blob, filename) {
 
 async function shareToInstagramStory() {
   ui.storyShareBtn.disabled = true;
-  const label = ui.storyShareBtn.querySelector('span');
+  const text = getText();
+  const label = ui.storyShareLabel;
   if (label) {
-    label.textContent = '이미지 준비 중...';
+    label.textContent = text.shareLoading;
   }
 
   try {
     const blob = await createResultCardBlob();
     const resultType = state.resultType || getTopResultType(state.score);
-    const filename = `university-festival-moneybti-${resultType}-${Date.now()}.png`;
+    const filename = `${text.filenamePrefix}-${resultType}-${Date.now()}.png`;
     let shared = false;
 
     if (typeof File !== 'undefined') {
       const file = new File([blob], filename, { type: 'image/png' });
       const shareData = {
-        title: '대학교 축제 MoneyBTI 결과',
-        text: '대학교 축제 X 전북은행 대학생 서포터즈 MoneyBTI 결과입니다. @jbsupporters_official @jbs_jeonjin.zip',
+        title: text.shareTitle,
+        text: text.shareText,
         files: [file],
       };
 
@@ -609,27 +961,75 @@ async function shareToInstagramStory() {
     if (!shared) {
       downloadBlob(blob, filename);
       window.open(TEAM_INSTAGRAM_URL, '_blank', 'noopener,noreferrer');
-      window.alert('결과 이미지를 저장했습니다. 인스타 스토리에서 업로드해 주세요.');
+      window.alert(text.savedAlert);
     }
   } catch (error) {
     const isAbort = error instanceof DOMException && error.name === 'AbortError';
     if (!isAbort) {
       try {
         const fallbackBlob = await createFallbackCardBlob();
-        const fallbackFilename = `university-festival-moneybti-${Date.now()}-fallback.png`;
+        const fallbackFilename = `${text.filenamePrefix}-${Date.now()}-fallback.png`;
         downloadBlob(fallbackBlob, fallbackFilename);
         window.open(TEAM_INSTAGRAM_URL, '_blank', 'noopener,noreferrer');
-        window.alert('공유 기능 대신 결과 이미지를 저장했습니다. 인스타 스토리에서 업로드해 주세요.');
+        window.alert(text.fallbackSavedAlert);
       } catch (_fallbackError) {
-        window.alert('이미지 생성 중 문제가 발생했습니다. 브라우저를 새로고침한 뒤 다시 시도해 주세요.');
+        window.alert(text.imageErrorAlert);
       }
     }
   } finally {
     ui.storyShareBtn.disabled = false;
     if (label) {
-      label.textContent = '결과 이미지 공유';
+      label.textContent = getText().shareButton;
     }
   }
+}
+
+function applyLanguage() {
+  const text = getText();
+  document.documentElement.lang = text.htmlLang;
+  document.title = text.documentTitle;
+  ui.languageToggle.textContent = text.toggleLabel;
+  ui.startBadge.textContent = text.startBadge;
+  ui.startTitle.innerHTML = text.startTitle;
+  ui.startSubtitle.textContent = text.startSubtitle;
+  ui.infoTitle.textContent = text.infoTitle;
+  ui.infoItemTime.textContent = text.infoItems[0];
+  ui.infoItemAnonymous.textContent = text.infoItems[1];
+  ui.infoItemShare.textContent = text.infoItems[2];
+  ui.startBtn.textContent = text.startButton;
+  ui.backBtn.textContent = text.backButton;
+  ui.resultBadge.textContent = text.resultBadge;
+  ui.benefitBtnText.innerHTML = text.benefitButton;
+  ui.officialInstagramLabel.textContent = text.officialInstagram;
+  ui.teamInstagramLabel.textContent = text.teamInstagram;
+  ui.storyShareLabel.textContent = text.shareButton;
+  ui.retryBtn.textContent = text.retryButton;
+  ui.benefitBadge.textContent = text.benefitBadge;
+  ui.benefitHeroCaption.innerHTML = text.benefitHeroCaption;
+  ui.benefitReasonTitle.textContent = text.benefitReasonTitle;
+  ui.benefitFeatureTitle.textContent = text.benefitFeatureTitle;
+  ui.benefitGuideTitle.innerHTML = text.benefitGuideTitle;
+  ui.benefitCtaTitle.textContent = text.benefitCtaTitle;
+  ui.benefitCtaDesc.textContent = text.benefitCtaDesc;
+  ui.storeBtnLabels.forEach((label) => {
+    label.textContent = text.storeButton;
+  });
+  ui.benefitBackBtn.textContent = text.benefitBackButton;
+
+  if (ui.question.classList.contains('active')) {
+    renderQuestion();
+  }
+  if (ui.result.classList.contains('active') && state.resultType) {
+    renderResult();
+  }
+  if (ui.benefit.classList.contains('active')) {
+    renderBenefit(state.resultType || getTopResultType(state.score));
+  }
+}
+
+function toggleLanguage() {
+  state.language = state.language === 'ko' ? 'en' : 'ko';
+  applyLanguage();
 }
 
 function resetTest() {
@@ -641,6 +1041,7 @@ function resetTest() {
   setScreen('start');
 }
 
+ui.languageToggle.addEventListener('click', toggleLanguage);
 ui.startBtn.addEventListener('click', () => {
   state.step = 0;
   state.score = { EJ: 0, EP: 0, IJ: 0, IP: 0 };
@@ -666,3 +1067,4 @@ ui.benefitBackBtn.addEventListener('click', () => {
 });
 ui.storyShareBtn.addEventListener('click', shareToInstagramStory);
 ui.retryBtn.addEventListener('click', resetTest);
+applyLanguage();

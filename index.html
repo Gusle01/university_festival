@@ -7,14 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=20260425f" />
+    <link rel="stylesheet" href="./styles.css?v=20260509a" />
   </head>
   <body>
     <main class="app-shell">
       <section id="start-screen" class="screen active start-screen">
-        <p class="badge">대동제</p>
-        <h1>나의 축제 소비 성향,<br /><span class="title-accent">MoneyBTI</span>로 확인하기</h1>
-        <p class="subtitle">10개 질문으로 알아보는 나의 축제 참여/소비 스타일</p>
+        <div class="start-topbar">
+          <p id="start-badge" class="badge">대동제</p>
+          <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language">English</button>
+        </div>
+        <h1 id="start-title">나의 축제 소비 성향,<br /><span class="title-accent">MoneyBTI</span>로 확인하기</h1>
+        <p id="start-subtitle" class="subtitle">10개 질문으로 알아보는 나의 축제 참여/소비 스타일</p>
 
         <div class="start-visual">
           <img class="start-team-logo" src="./assets/jbs_jeonjin_team.png" alt="전진난만 팀 메인 이미지" />
@@ -24,11 +27,11 @@
         </div>
 
         <div class="info-card">
-          <h2>테스트 안내</h2>
+          <h2 id="info-title">테스트 안내</h2>
           <ul>
-            <li>약 1분 소요</li>
-            <li>익명으로 바로 진행</li>
-            <li>결과 화면 저장/공유 가능</li>
+            <li id="info-item-time">약 1분 소요</li>
+            <li id="info-item-anonymous">익명으로 바로 진행</li>
+            <li id="info-item-share">결과 화면 저장/공유 가능</li>
           </ul>
         </div>
 
@@ -51,7 +54,7 @@
 
       <section id="result-screen" class="screen" aria-live="polite">
         <article class="result-card">
-          <p class="badge">결과</p>
+          <p id="result-badge" class="badge">결과</p>
           <div class="result-visual-wrap">
             <div class="result-visual-inner">
               <img id="result-visual" class="result-visual" src="./assets/result-c.svg" alt="결과 대표 이미지" />
@@ -61,7 +64,7 @@
           <p id="result-desc" class="result-desc"></p>
           <div class="tips" id="result-tips"></div>
           <button id="benefit-btn" class="btn btn-primary benefit-entry-btn result-cta-fixed" type="button">
-            나의 성향과 "<span class="sok-emphasis">쏙</span>"맞는 혜택 찾기
+            <span id="benefit-btn-text">나의 성향과 "<span class="sok-emphasis">쏙</span>"맞는 혜택 찾기</span>
           </button>
         </article>
 
@@ -87,28 +90,28 @@
         <div class="result-actions">
           <button id="official-instagram-btn" class="btn btn-secondary icon-btn" type="button">
             <img src="./assets/icon-instagram.svg" alt="" aria-hidden="true" />
-            <span>서포터즈 공식 인스타</span>
+            <span id="official-instagram-label">서포터즈 공식 인스타</span>
           </button>
           <button id="team-instagram-btn" class="btn btn-secondary icon-btn" type="button">
             <img src="./assets/icon-instagram.svg" alt="" aria-hidden="true" />
-            <span>전진난만 팀 인스타</span>
+            <span id="team-instagram-label">전진난만 팀 인스타</span>
           </button>
           <button id="story-share-btn" class="btn btn-secondary icon-btn" type="button">
             <img src="./assets/icon-share.svg" alt="" aria-hidden="true" />
-            <span>결과 이미지 공유</span>
+            <span id="story-share-label">결과 이미지 공유</span>
           </button>
           <button id="retry-btn" class="btn btn-secondary result-retry-inline" type="button">다시 테스트하기</button>
         </div>
       </section>
 
       <section id="benefit-screen" class="screen benefit-screen" aria-live="polite">
-        <p class="badge">은행 혜택 추천</p>
+        <p id="benefit-badge" class="badge">은행 혜택 추천</p>
 
         <article class="benefit-hero-card">
           <div class="benefit-logo-wrap">
             <img src="./assets/sokbank-logo.png" alt="쏙뱅크 앱 로고" class="benefit-logo" width="440" height="390" />
           </div>
-          <p class="benefit-hero-caption">
+          <p id="benefit-hero-caption" class="benefit-hero-caption">
             <span class="benefit-caption-accent">쏙뱅크</span>의 혜택에
             <span class="benefit-caption-accent">"쏙"</span>빠져!
           </p>
@@ -123,14 +126,14 @@
         </article>
 
         <article class="benefit-reason-card">
-          <h3>💡 왜 이 혜택이 맞을까?</h3>
+          <h3 id="benefit-reason-title">💡 왜 이 혜택이 맞을까?</h3>
           <p id="benefit-reason-text"></p>
         </article>
 
         <article class="benefit-feature-card">
           <header class="benefit-feature-head">
             <span class="benefit-feature-icon">📱</span>
-            <h3>추천 혜택</h3>
+            <h3 id="benefit-feature-title">추천 혜택</h3>
             <span id="benefit-feature-badge" class="benefit-feature-badge"></span>
           </header>
           <div id="benefit-feature-list" class="benefit-feature-list"></div>
@@ -138,7 +141,7 @@
         </article>
 
         <article class="benefit-guide-card" aria-label="쏙뱅크 혜택 확인 방법">
-          <h3>
+          <h3 id="benefit-guide-title">
             📱 <span class="benefit-guide-accent">쏙뱅크</span>에서 이렇게 확인할 수 있어요!
           </h3>
           <div class="benefit-guide-images">
@@ -151,22 +154,22 @@
         </article>
 
         <article class="benefit-cta-card">
-          <h3>전북은행 앱에서 확인해보세요</h3>
-          <p>전북은행 모바일뱅킹 앱에서 더 많은 혜택과 이벤트를 확인할 수 있어요. 지금 바로 확인해보세요.</p>
+          <h3 id="benefit-cta-title">전북은행 앱에서 확인해보세요</h3>
+          <p id="benefit-cta-desc">전북은행 모바일뱅킹 앱에서 더 많은 혜택과 이벤트를 확인할 수 있어요. 지금 바로 확인해보세요.</p>
           <div class="benefit-cta-actions">
             <a
               class="btn btn-primary benefit-store-btn"
               href="https://play.google.com/store/apps/details?id=kr.co.jbbank.privatebank&pcampaignid=web_share"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="./assets/icon-playstore.svg" alt="" aria-hidden="true" /><span>쏙뱅크 속으로 "쏙!"</span></a
+              ><img src="./assets/icon-playstore.svg" alt="" aria-hidden="true" /><span class="store-btn-label">쏙뱅크 속으로 "쏙!"</span></a
             >
             <a
               class="btn btn-secondary benefit-store-btn"
               href="https://apps.apple.com/kr/app/%EC%A0%84%EB%B6%81%EC%9D%80%ED%96%89-%EC%8F%99%EB%B1%85%ED%81%AC/id1547903285"
               target="_blank"
               rel="noopener noreferrer"
-              ><img src="./assets/icon-appstore.svg" alt="" aria-hidden="true" /><span>쏙뱅크 속으로 "쏙!"</span></a
+              ><img src="./assets/icon-appstore.svg" alt="" aria-hidden="true" /><span class="store-btn-label">쏙뱅크 속으로 "쏙!"</span></a
             >
           </div>
         </article>
@@ -175,6 +178,6 @@
       </section>
     </main>
 
-    <script src="./app.js?v=20260425f" defer></script>
+    <script src="./app.js?v=20260509a" defer></script>
   </body>
 </html>

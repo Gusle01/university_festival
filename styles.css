@@ -43,6 +43,13 @@ body {
   gap: 20px;
 }
 
+.start-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
 .badge {
   display: inline-flex;
   align-self: flex-start;
@@ -54,6 +61,25 @@ body {
   color: var(--primary);
   background: transparent;
   border: 2px solid #b8c8f8;
+}
+
+.language-toggle {
+  flex: 0 0 auto;
+  min-width: 104px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid #b8c8f8;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #3459d6;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(37, 63, 146, 0.08);
+}
+
+.language-toggle:active {
+  background: #edf3ff;
 }
 
 h1,
